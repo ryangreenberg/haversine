@@ -4,9 +4,11 @@ This gem calculates the Haversine distance between two points given their longit
 
 This is a replacement for all geo libraries that use built-in SQL DB functionality for their calculations.
 
-h2. Install & Usage
+h2. Installation & Usage
 
-Install this gem with @gem install haversine@. Calling @Haversine.distance@ with four lat/lon coordinates returns a @Haversine::Distance@ object which can provide output in kilometers, meters, miles, or feet.
+Install this gem with @gem install haversine@.
+
+Calling @Haversine.distance@ with four lat/lon coordinates returns a @Haversine::Distance@ object which can provide output in kilometers, meters, miles, or feet.
 
 <pre>
 require 'haversine'
@@ -21,6 +23,7 @@ distance.to_feet => 31852713.6507256
 </pre>
 
 Convenience aliases for the measurements exist:
+
 <pre>
 distance.to_kilometers == distance.to_km
 distance.to_meters == distance.to_m
